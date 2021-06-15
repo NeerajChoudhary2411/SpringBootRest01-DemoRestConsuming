@@ -22,6 +22,7 @@ public class ConsumingQuoteTest implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
+		System.out.println("DEMO done");
 			Quote quote = rt.getForObject(url, Quote.class);
 			log.info(quote.toString());
 
